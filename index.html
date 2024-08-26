@@ -20,16 +20,19 @@
         form {
             margin-top: 2em;
         }
-        label, input, textarea {
-            display: block;
+        input, textarea {
+            width: 100%;
+            padding: 0.5em;
             margin-bottom: 1em;
+            font-family: 'Roboto Mono', monospace;
         }
-        input[type="submit"] {
+        button {
             background-color: #333;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 0.5em 1em;
             cursor: pointer;
+            font-family: 'Roboto Mono', monospace;
         }
     </style>
 </head>
@@ -39,18 +42,17 @@
     individuals regain their agency and voices. Stay tuned for more updates.</p>
     <p>Contact us at: <a href="mailto:info@luke.health">info@luke.health</a></p>
     
-    <form action="#" method="POST">
-        <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/mnnawnrj" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="_replyto" required>
         
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
         
-        <input type="submit" value="Send">
+        <button type="submit">Send</button>
     </form>
 </body>
 </html>
